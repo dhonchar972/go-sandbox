@@ -37,6 +37,12 @@ func main() {
 	i = "dadadad"
 	i = 4
 	fmt.Println(i)
-	k, ok := i.(float64)
+	k, ok := i.(float32)
 	fmt.Println(k, ok) // 0 false, can't cast to type float
+
+	var h interface{} = "ghhgjgjgj"
+	t, ok := h.(string)
+	fmt.Println(t, ok) // ghhgjgjgj true
+	c, ok := h.(float64)
+	fmt.Println(c, ok) // 0 false, can't cast to type float
 }
