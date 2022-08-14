@@ -61,4 +61,8 @@ func TestMultiple(t *testing.T) { // base signatur
 		})
 	})
 
+	t.Cleanup(func() {
+		// some action
+	})
+
 }

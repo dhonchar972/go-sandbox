@@ -1,3 +1,7 @@
 go mod init
 go test // Files containing tests should be called name_test, with the _test suffix.
 go test -v json
+
+export PATH=$PATH:/usr/local/go/bin
+
+go run main.go
