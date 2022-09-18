@@ -1,0 +1,48 @@
+go build hello.go
+go build -o hello_world hello.go
+go install github.com/rakyll/hey@latest
+
+pacman -S make
+C:\msys64\usr\bin\make.exe
+
+
+import (
+	"fmt"           // default import
+	"database/sql"  // inner package
+	w "os"          // import with alias
+	. "math"        // import without qualification(like static import in java)
+	_ "gopkg.in/goracle.v2"  // code used only through introspection
+)
+///////////////////////////////////////////////////////////////////////////////////////////////
+Types:
+int8, int16, int32, int64, int, rune (int32)// Unicode
+uint8, uint16, uint32, uint64, uint, byte (uint8)
+uintptr
++Inf, -Inf, NaN
+float32, float64
+big.Int, big.Rat, big.Float
+complex64, complex128
+bool
+string
+struct
+func
+interface
+chan
+nil
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+Collections: arrays, slices, maps
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+i, j = j, i // swap
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+interfaces, maps and slices are reference types!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
