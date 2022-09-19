@@ -8,5 +8,7 @@ func main() {
 	//callMaps()
 	//callStructures()
 	//callEmbeddedStructure()
-	callFunctions()
+	//callFunctions()
+	//callTypesAndMethods()
+	callErrors()
 }

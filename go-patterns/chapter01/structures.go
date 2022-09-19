@@ -26,17 +26,17 @@ func (*Person) introduce(name string) int {
 	return 0
 }
 
-func intro(p *Person) Speaking {
+func intro(p *Person) Speaking { // reference
 	p.introduce(p.name)
 	return p
 }
 
-func intro2(p Person) Speaking {
+func intro2(p Person) Speaking { // value type, make copy
 	p.introduce(p.name)
 	return &p
 }
 
-func intro3(p Speaking) Speaking {
+func intro3(p Speaking) Speaking { // interface is reference type
 	p.sayHi()
 	return p
 }
@@ -123,4 +123,4 @@ func functionAsParameter() {
 
 // defer - отложенное выполнение
 
-// interfaces, maps and slices are reference types!!!!!!!!!!!!!!!!!!!!!!!!!!
+// interfaces, functions, maps and slices are reference types!!!!!!!!!!!!!!!!!!!!!!!!!!
